@@ -11,5 +11,12 @@ class Berita extends Model
 	protected $table = 'tbl_berita';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'waktu_berita',
+		'id_pengirim',
+		'jdl_berita',
+		'isi_berita',
+		'id_sakramen',
+		'id_kategorial'
+	];
 }

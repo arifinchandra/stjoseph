@@ -1,4 +1,6 @@
 <?php
+//set locale
+//setlocale (LC_TIME, 'INDONESIA');
 
 /**
  * Laravel - A PHP Framework For Web Artisans

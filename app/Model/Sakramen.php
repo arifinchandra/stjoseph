@@ -11,5 +11,7 @@ class Sakramen extends Model
 	protected $table = 'tbl_sakramen';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'nm_sakramen'
+	];
 }

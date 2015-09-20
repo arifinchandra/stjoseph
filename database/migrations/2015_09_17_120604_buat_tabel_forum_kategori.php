@@ -15,8 +15,8 @@ class BuatTabelForumKategori extends Migration
         Schema::create('tbl_forum_kategori', function (Blueprint $table) {
             $table->mediumInteger('id_kategori',true,true);
             $table->string('nm_kategori');
-            $table->mediumText('kat_desc');
-            $table->mediumInteger('id_last_post',false,true);
+            $table->mediumText('kat_desc')->nullable();
+            $table->mediumInteger('id_last_post',false,true)->nullable();
 
         });
     }

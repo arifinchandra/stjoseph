@@ -1,14 +1,18 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<!--head section nanti disini -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--css dan js disini -->
-	{!!  Html::style('css/bootstrap.min.css') !!}
+	{!! Html::style('css/bootstrap-theme.css') !!}
+	{!!  Html::style('css/bootstrap.css') !!}
+
+	{!! Html::style('css/bootstrap-datetimepicker.css') !!}
+
 	{!! Html::style('css/sigkat.css') !!}
 	{!! Html::style('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css') !!}
-	{!! Html::script('js/jquery-1.11.2.min.js') !!}
-	{!! Html::script('js/bootstrap.js', array('type'=>'text/javascript')) !!}
+
 
 </head>
 <body class="sigkat">

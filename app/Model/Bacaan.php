@@ -11,5 +11,11 @@ class Bacaan extends Model
 	protected $table = 'tbl_bacaan';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'tgl_bacaan',
+		'tema_bacaan',
+		'isi_bacaan',
+		'rangkuman',
+		'tipe_bacaan',
+	];
 }

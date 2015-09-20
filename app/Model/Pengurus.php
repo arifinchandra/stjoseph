@@ -11,5 +11,8 @@ class Pengurus extends Model
 	protected $table = 'tbl_pengurus';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'jabatan',
+		'id_umat',
+	];
 }

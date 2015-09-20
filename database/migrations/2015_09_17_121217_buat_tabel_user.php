@@ -24,6 +24,7 @@ class BuatTabelUser extends Migration
             $table->dateTime('kunjungan_terakhir')->nullable();
             $table->mediumInteger('jumlah_post',false,true)->nullable();
             $table->mediumInteger('id_umat',false,true)->nullable();
+            $table->text('path_gambar')->nullable();
             $table->string('remember_token',100)->nullable();
         });
     }

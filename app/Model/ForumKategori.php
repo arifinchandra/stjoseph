@@ -11,5 +11,9 @@ class ForumKategori extends Model
 	protected $table = 'tbl_forum_kategori';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'nm_kategori',
+		'id_post_last',
+		'kat_desc'
+	];
 }

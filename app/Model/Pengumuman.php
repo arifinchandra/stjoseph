@@ -11,5 +11,10 @@ class Pengumuman extends Model
 	protected $table = 'tbl_pengumuman';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'tgl_pengumuman',
+		'id_jenis_pengumuman',
+		'tema_pengumuman',
+		'isi_pengumuman'
+	];
 }

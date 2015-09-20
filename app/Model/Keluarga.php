@@ -11,5 +11,8 @@ class Keluarga extends Model
 	protected $table = 'tbl_keluarga';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'id_kk',
+		'id_lingkungan',
+	];
 }

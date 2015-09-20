@@ -18,6 +18,9 @@ class BuatTabelForumTopik extends Migration
             $table->mediumInteger('id_forum_kategori',false,true);
             $table->dateTime('waktu_buat_topik');
             $table->mediumInteger('id_pembuat_',false,true);
+            $table->string('desc_topic')->nullable();
+	        $table->mediumInteger('id_post_last',false,true)->nullable();
+	        $table->mediumInteger('id_poster_last',false,true)->nullable();
         });
     }
 

@@ -11,5 +11,16 @@ class Kegiatan extends Model
 	protected $table = 'tbl_kegiatan';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'nm_kegiatan',
+		'id_kategorial',
+		'jns_kegiatan',
+		'tgl_mulai',
+		'tgl_selesai',
+		'detail_kegiatan',
+		'waktu_input',
+		'lokasi',
+		'kontak',
+		'id_sakramen',
+	];
 }

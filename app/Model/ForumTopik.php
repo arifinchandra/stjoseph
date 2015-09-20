@@ -11,5 +11,18 @@ class ForumTopik extends Model
 	protected $table = 'tbl_forum_topik';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'nm_topik',
+		'id_forum_kategori',
+		'waktu_buat_topik',
+		'id_pembuat',
+		'desc_topik',
+	];
+
+	//relationship
+
+	//1 topik bisa memiliki banyak post
+	public function topikPosts () {
+
+	}
 }

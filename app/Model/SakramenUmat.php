@@ -11,5 +11,12 @@ class SakramenUmat extends Model
 	protected $table = 'tbl_sakramen_umat';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'id_umat',
+		'id_sakramen',
+		'tgl_terima',
+		'pemberi_sakramen',
+		'tempat_pemberian_sakramen',
+		'no_sertifikat',
+	];
 }

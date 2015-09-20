@@ -20,8 +20,30 @@ Route::get('/', function () {
 
 */
 
+use stjo\Http\Controllers\PengumumanController;
+Route::model('katForum', 'stjo\Model\ForumKategori');
 
 Route::get('/', 'PagesController@index');
+Route::get('login', 'UserController@loginForm');
+
+Route::get('register', 'UserController@registerFirst');
+Route::get('pengumumanBaru/{jumlah}', 'PengumumanController@hilightPengumuman');
+//$router->resource('pengumuman','PengumumanController');
+//Berita
+//Route::get('berita','BeritaController@index');
+
+//Forum
+Route::get('forum/manKat', 'ForumController@showManKat');
+Route::post('forum/manKat', 'ForumController@simpanKategori');
+Route::post('forum/manKat/edit/{id}', 'ForumController@simpanKategori');
+Route::get('forum/manKat/edit/{id}', 'ForumController@editKategori');
+
+
+//pengumuman
+get('pengumuman/input', 'PengumumanController@showInputPengumuman');
+
 Route::get('{foo}', function($foo) {
+
+
 	return view($foo);
 });

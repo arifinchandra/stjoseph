@@ -11,5 +11,8 @@ class Kategorial extends Model
 	protected $table = 'tbl_kategorial';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'nm_kategorial',
+		'id_ketua_kategorial'
+	];
 }

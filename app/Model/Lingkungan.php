@@ -11,5 +11,8 @@ class Lingkungan extends Model
 	protected $table = 'tbl_lingkungan';
 	public $timestamps = false;
 
-	protected $fillable = [];
+	protected $fillable = [
+		'nm_lingkungan',
+		'id_ketua_lingkungan',
+	];
 }

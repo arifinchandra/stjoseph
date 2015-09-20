@@ -5,7 +5,7 @@
 		<div class="btn-group">
 			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Sakramen</button>
 			<ul class="dropdown-menu" role="menu">
-				@foreach ( sigkat\Model\sakramen::all() as $sakramen)
+				@foreach ( stjo\Model\Sakramen::all() as $sakramen)
 					<li role="presentation"><a role="menuitem" tabindex="-1" href="{!! $sakramen->id_sakramen !!}">{!! $sakramen->nm_sakramen !!}</a></li>
 				@endforeach
 
@@ -14,7 +14,7 @@
 		<div class="btn-group">
 			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Kategorial</button>
 			<ul class="dropdown-menu" role="menu">
-				@foreach( sigkat\Model\kategorial::all() as $kategorial)
+				@foreach( stjo\Model\Kategorial::all() as $kategorial)
 					<li role="presentation"><a role="menuitem" tabindex="-1" href="{!! $kategorial->id_kategorial !!}">{!! $kategorial->nm_kategorial !!}</a></li>
 				@endforeach
 			</ul>
@@ -33,8 +33,9 @@
 	</div>
 	<div class="col-xs-3">
 		<div>
-			<div class="input-group">
-				<input type="text" class="form-control" placeholder="cari">
+			<div class="form-group" id="searchBox">
+				{!! Form::text('cari',null,['class' => 'form-control','placeholder' => 'Cari Berita']) !!}
+
 			</div>
 
 		</div>
