@@ -4,5 +4,7 @@
 	</div>
 </div>
 
+@section('scripts')
 {!! Html::script('js/jquery-1.11.2.min.js') !!}
 {!! Html::script('js/bootstrap.js', array('type'=>'text/javascript')) !!}
+@endsection

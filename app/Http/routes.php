@@ -20,7 +20,6 @@ Route::get('/', function () {
 
 */
 
-use stjo\Http\Controllers\PengumumanController;
 Route::model('katForum', 'stjo\Model\ForumKategori');
 
 Route::get('/', 'PagesController@index');
@@ -41,6 +40,10 @@ Route::get('forum/manKat/edit/{id}', 'ForumController@editKategori');
 
 //pengumuman
 get('pengumuman/input', 'PengumumanController@showInputPengumuman');
+
+
+//Registrasi
+get('user/reg1', 'UserController@showRegFormOne');
 
 Route::get('{foo}', function($foo) {
 

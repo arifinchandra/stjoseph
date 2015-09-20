@@ -12,7 +12,7 @@
 
 	{!! Html::style('css/sigkat.css') !!}
 	{!! Html::style('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css') !!}
-
+@yield('style')
 
 </head>
 <body class="sigkat">
@@ -38,6 +38,7 @@
 @include('template.footer')
 		<!--footer end -->
 
+@yield('scripts')
 
 </body>
 </html>
